@@ -419,6 +419,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -597,11 +604,6 @@ a {
   }
   .col-12 {
     flex-basis: 100%;
-  }
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
   }
   .nav-link {
     flex-basis: 100px;
