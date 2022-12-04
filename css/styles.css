@@ -352,9 +352,6 @@ a {
   border-radius: 5px;
 }
 
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
 .btn {
   margin-top: 15px;
   width: 100%;
@@ -364,25 +361,45 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
+}
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .error {
   background-color: #e4757a;
 }
+.error:hover {
+  background-color: #f1b5b8;
+}
 
 .info {
   background-color: #927bc1;
+}
+.info:hover {
+  background-color: #bdafd9;
 }
 
 .success {
   background-color: #63cc82;
 }
+.success:hover {
+  background-color: #9ddfb0;
+}
 
 .warning {
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
@@ -435,6 +452,11 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+@media (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
+}
 
 .nav-link:hover {
   color: #fff;
@@ -452,7 +474,6 @@ a {
   max-width: 100%;
   max-height: 100%;
 }
-
 .img-frame {
   display: block;
   margin-left: auto;
@@ -462,7 +483,6 @@ a {
   padding: 13px;
   border: 1px solid #ccc;
 }
-
 .img-logo {
   display: block;
   margin-left: auto;
@@ -474,6 +494,14 @@ a {
 /* ============================================= */
 .container {
   padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .row {
@@ -546,12 +574,6 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .centered {
     display: block;
     margin-left: auto;
@@ -604,12 +626,6 @@ a {
   }
   .col-12 {
     flex-basis: 100%;
-  }
-  .nav-link {
-    flex-basis: 100px;
-  }
-  .btn {
-    padding: 10px 30px;
   }
   .btn + .btn {
     margin-left: 10px;

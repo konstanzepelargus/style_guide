@@ -3,7 +3,7 @@
 $color-primary: #58e1c1;
 $color-secondary: #777;
 $color-btnlinkhover: #fff;
-$color-linkbutdef11: #51ddfc;
+$color-linkbtndef11: #51ddfc;
 $color-error9: #e4757a;
 $color-info: #927bc1;
 $color-success10: #63cc82;
@@ -16,6 +16,18 @@ $color-background6: #4da2bb;
 $color-background7: #ec9fa3;
 $color-background8: #fd9f85;
 $color-background12: #80e8d1;
+
+//Color functions
+
+$default-light: lighten($color-linkbtndef11, 15%);
+$success-light: lighten($color-success10, 15%);
+$error-light: lighten($color-error9, 15%);
+$warning-light: lighten($color-warning2, 15%);
+$info-light: lighten($color-info, 15%);
+
+//Other variables
+
+$mt10: 10px;
 
 //Media query breakpoints
 

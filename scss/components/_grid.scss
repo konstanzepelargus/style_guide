@@ -4,6 +4,12 @@
 
 .container {
   padding: 0 10px;
+
+  @media #{$brk-wide} {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
 }
 
 .row {
@@ -13,7 +19,7 @@
 }
 
 [class^=col] {
-  margin-top: 10px;
+  margin-top: $mt10;
   flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
@@ -61,7 +67,7 @@
 }
 
 .theme.col-11 {
-  background-color: $color-linkbutdef11;
+  background-color: $color-linkbtndef11;
 }
 
 .theme.col-12 {
